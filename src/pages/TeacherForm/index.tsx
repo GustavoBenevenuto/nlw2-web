@@ -3,12 +3,12 @@ import React from 'react';
 import './styles.css';
 
 
-const TeacherList = () => {
+const TeacherForm = () => {
     return (
         <div> 
-           TeacherList
+           TeacherForm
         </div>
     );
 }
 
-export default TeacherList;
+export default TeacherForm;
