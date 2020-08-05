@@ -1,4 +1,4 @@
-#page-teacher-form{
+#page-teacher-form {
     width: 100vw;
     height: 100vh;
 }
@@ -29,17 +29,18 @@
 #page-teacher-form main fieldset legend {
     font: 700 2.4rem Archivo;
     color: var(--color-text-title);
+    margin-bottom: 2.4rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     padding-bottom: 1.6rem;
-    border-bottom: 1px solid var(--color-line-white);
+    border-bottom: 1px solid var(--color-line-in-white);
 }
 
 #page-teacher-form main footer {
     padding: 4rem 2.4rem;
-    background-color: var(--color-box-footer);
+    background: var(--color-box-footer);
     border-top: 1px solid var(--color-line-in-white);
     margin-top: 6.4rem;
 }
@@ -55,7 +56,7 @@
 
 #page-teacher-form main footer p img {
     margin-right: 2rem;
-} 
+}
 
 #page-teacher-form main footer button {
     width: 100%;
@@ -70,10 +71,36 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    transform: background-color 0.2s;
+    transition: background-color 0.2s;
     margin-top: 3.2rem;
 }
 
 #page-teacher-form main footer button:hover {
     background: var(--color-secundary-dark);
+}
+
+@media (min-width: 700px) {
+    #page-teacher-form {
+        max-width: 100vw;
+    }
+
+    #page-teacher-form .page-header .header-content {
+        margin-bottom: 0;
+    }
+
+    #page-teacher-form main footer {
+        padding: 4.0rem 6.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #page-teacher-form main footer p {
+        justify-content: space-between;
+    }
+
+    #page-teacher-form main footer button {
+        width: 20rem;
+        margin-top: 0;
+    }
 }
