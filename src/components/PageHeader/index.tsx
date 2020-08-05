@@ -8,6 +8,7 @@ import logo from '../../assets/images/logo.svg';
 
 interface HeaderProps {
     title: string;
+    description?: string;
 }
 
 const PageHeader: React.FunctionComponent<HeaderProps> = (props) => {
@@ -22,6 +23,9 @@ const PageHeader: React.FunctionComponent<HeaderProps> = (props) => {
 
             <div className="header-content">
                 <strong>{props.title}</strong>
+                {props.description && 
+                    <p>{props.description}</p>
+                }
                 {props.children}
             </div>
         </header>
