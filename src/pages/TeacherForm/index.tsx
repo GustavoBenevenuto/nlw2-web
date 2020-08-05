@@ -5,6 +5,8 @@ import PageHeader from '../../components/PageHeader';
 import Input from '../../components/Input';
 
 import warningIcon from '../../assets/images/icons/warning.svg';
+import Textarea from '../../components/Textarea';
+import Select from '../../components/Select';
 
 const TeacherForm = () => {
     return (
@@ -21,22 +23,31 @@ const TeacherForm = () => {
                     <Input name="avatar" label="Avatar"/>
                     
                     <Input name="whatsapp" label="Whatsapp"/>
+
+                    <Textarea name="bio" label="Biografia"/>
                </fieldset>
 
                <fieldset>
                    <legend>Sobre a aula</legend>
-                    <Input name="subject" label="Matéria"/>
+                    <Select 
+                        name="subject" 
+                        label="Matéria"
+                        options={[
+                            {value: 'Banco de dados I', label: 'Banco de dados I'},
+                            {value: 'Banco de dados II', label: 'Banco de dados II'},
+                            {value: 'Desenvolvimento Desktop', label: 'Desenvolvimento Desktop'},
+                            {value: 'Desenvolvimento Mobile', label: 'Desenvolvimento Mobile'},
+                            {value: 'Desenvolvimento Web', label: 'Desenvolvimento Web'},
+                            {value: '', label: ''},
+                        ]}
+                    />
 
                     <Input name="cost" label="Custo por hora"/>
                </fieldset>
 
                <fieldset>
                    <legend>Horários disponíveis</legend>
-                    <Input name="name" label="Nome completo"/>
-
-                    <Input name="avatar" label="Avatar"/>
-                    
-                    <Input name="whatsapp" label="Whatsapp"/>
+                   
                </fieldset>
 
                <footer>
